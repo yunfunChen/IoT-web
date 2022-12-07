@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>On the "Way" To the Gym - JumpRope</title>
+        <title>On the "Way" To the Gym - Map</title>
 
         <!-- CSS FILES -->        
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,6 +14,13 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
+        <!-- Vectormap -->
+        <link href="./css/jqvmap.min.css" rel="stylesheet">
+        <!-- Custom Stylesheet -->
+        <link href="./css/style.css" rel="stylesheet">
+
+
+
     </head>
     
     <body>
@@ -105,15 +111,16 @@
                 <div class="section-overlay"></div>
                 <div class="container">
                     <div class="row">
-
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <form class="custom-form donate-form" action="#" method="get" role="form">
-                                <h3 class="mb-4">Jump Rope</h3>
-                                <h5 class="mb-3">Jump Rope</h5>
-                                <canvas id="lineChart"></canvas>
-                            </form>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">World Map</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div id="world-map"></div>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -208,7 +215,23 @@
                 </div>
             </div>
         </footer>
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./js/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+    
 
+    <!-- Vectormap -->
+    <script src="./js/jquery.vmap.min.js"></script>
+    <script src="./js/jquery.vmap.world.js"></script>
+    <script src="./js/jquery.vmap.usa.js"></script>
+
+
+    <!-- All init script -->
+    <script src="./js/jqvmap-init.js"></script>
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -232,5 +255,6 @@
       <!-- Custom js for this page-->
       <script src="js/chart.js"></script>
       <!-- End custom js for this page-->
+
     </body>
 </html>
